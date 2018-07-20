@@ -10,6 +10,8 @@ steps:
     failure_file=failure.log
     touch ${failure_file}
 
+    echo `ls -lah /`
+
     # Loop through the builders, and build independently.
     for d in */; do
       echo `pwd` `ls -l`
