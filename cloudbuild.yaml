@@ -12,6 +12,7 @@ steps:
 
     # Loop through the builders, and build independently.
     for d in */; do
+      echo `pwd` `ls -l`
       readme="${d}README.md"
       if [[ ! -f "${readme}" ]]; then
         # Note the error but try to build anyway.
