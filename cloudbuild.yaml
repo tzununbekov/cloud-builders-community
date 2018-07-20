@@ -3,6 +3,9 @@ steps:
 
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
+  volumes:
+  - name: 'tzununbekov'
+    path: '/test'
   args:
   - '-c'
   - |
